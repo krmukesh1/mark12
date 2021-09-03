@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="index.html">Traingle Icon</a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closed"></i>
+          <ul>
+            <li><a  href="index.html">Traingle</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="hypotenuse.html">Hypotenuse</a></li>
+            <li><a class="active" href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="open"></i>
+      </nav>
+    </header>
+    <div class="container">
     <h1>Traingle Quiz</h1>
     <form class="quiz-form">
       <div class="question-container">
@@ -29,6 +51,8 @@
     </form>
     <button id="submit-answer-btn">Submit Answers</button>
     <div id="output"></div>
+  </div>
     <script src="quiz.js"></script>
+    <script src="./navtoggle.js"></script>
   </body>
 </html>
