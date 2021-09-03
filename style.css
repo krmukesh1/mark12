@@ -8,7 +8,11 @@ a {
   color: #fff;
 }
 .container {
-  padding: 2% 6%;
+  padding: 2% 8%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 550px;
 }
 .active {
   border-bottom: 2px solid yellow;
@@ -41,6 +45,31 @@ nav .fa {
   color: #fff;
   display: none;
 }
+label {
+  margin: 10px 0;
+}
+input {
+  padding: 8px;
+}
+button#is-traingle-btn {
+  margin-top: 10px;
+  padding: 9px;
+}
+button#areaBtn {
+  width: 190px;
+  padding: 10px;
+}
+button#hypotenuse-btn {
+  margin-top: 10px;
+  padding: 10px;
+}
+p {
+  margin: 10px 0;
+}
+button#submit-answer-btn {
+  padding: 10px;
+  margin: 10px 0;
+}
 @media (max-width: 700px) {
   ul li {
     display: block;
@@ -60,5 +89,8 @@ nav .fa {
     top: 0;
     right: -200px;
     text-align: left;
+  }
+  .container {
+    max-width: 350px;
   }
 }
